@@ -23,7 +23,7 @@ API = wandb.Api()
 WIDTH = 5.1
 VERSION = "1"
 plt.style.use("seaborn-colorblind")
-MEMOIZE_DIR = "./cache"
+MEMOIZE_DIR = "/home/andrep/repos/fv3net/projects/microphysics/docs/manuscript/cache"
 FIG_DIR = "./figs"
 
 
