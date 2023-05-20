@@ -1,4 +1,5 @@
 use_wandb: false
+seed: 5
 batch_size: 512
 epochs: 25
 nfiles_valid: 100
@@ -57,10 +58,6 @@ model:
   normalize_default:
     center: per_feature
     scale: all
-  normalize_map:
-    air_pressure:
-      center: all
-      scale: all_all
   selection_map: {}
   timestep_increment_sec: 900
 transform:

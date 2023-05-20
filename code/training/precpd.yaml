@@ -1,4 +1,5 @@
 batch_size: 512
+seed: 5
 checkpoint_model: true
 epochs: 35
 log_level: INFO
