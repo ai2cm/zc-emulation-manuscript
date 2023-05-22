@@ -1,0 +1,3 @@
+[submodule "code/fv3net"]
+	path = code/fv3net
+	url = https://github.com/ai2cm/fv3net.git
