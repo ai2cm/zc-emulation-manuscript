@@ -2,4 +2,6 @@
 **/fig_data/*
 **/figs/*
 **/zenodo/*
+**/outputs/*
+**/fv3gfs_inputs/*
 **/__pycache__/*
