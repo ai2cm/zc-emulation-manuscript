@@ -30,6 +30,7 @@ create_training_%:
 
 # Create training data sampling from all months of the year
 # Much faster if it can be farmed out as jobs
+# Creates a lot of data
 create_training_allmonths: (create_training_01 \
 	create_training_02 \
 	create_training_03 \
@@ -42,6 +43,9 @@ create_training_allmonths: (create_training_01 \
 	create_training_10 \
 	create_training_11 \
 	create_training_12 )
+
+gather_training:
+	code/scripts/gather_training_netcdfs.sh
 
 run_30_day_july:
 	mkdir -p outputs/30_day_july
