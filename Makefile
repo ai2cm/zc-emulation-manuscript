@@ -59,4 +59,4 @@ run_1yr:
 	docker run $(PROG_DOCKER_ARGS) $(RUN_IMAGE) runfv3 run-native /outputs/1yr/fv3config.yaml /outputs/1yr/rundir
 
 clean_outputs:
-	sudo rm -rf outputs/*
+	sudo rm -rf outputs/1yr outputs/30_day_july outputs/training_rundirs
