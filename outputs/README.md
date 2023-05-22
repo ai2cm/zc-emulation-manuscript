@@ -1,0 +1,1 @@
+This folder is a placeholder for outputs produced by any of the makefile targets.
