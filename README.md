@@ -1,5 +1,7 @@
 # Zhao-Carr Microphysics Emulation JAMES Manuscript Code and Data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7976184.svg)](https://doi.org/10.5281/zenodo.7976184)
+
 This repository contains all the code to reproduce the model training, online simulations, and figures for the Zhao-Carr microphysics emulation manuscript. The data for reproducing results can be found on Zenodo (https://doi.org/10.5281/zenodo.7963397), including reduced outputs from all experiments used in the notebooks, a subsampled set of training/validation data, and FV3GFS intialization data.
 
 After downloading the data, run the following to extract the data into the manuscript directory:
