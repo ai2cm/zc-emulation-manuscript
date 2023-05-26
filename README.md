@@ -68,3 +68,7 @@ We provide the models used in the manuscript (gscond regressor + classifier, and
 Finally, we provide an entry point to re-run online emulation runs of FV3GFS using the emulation models under `models`.  Using `make run_30_day_july` will initialize an online simulation from July 1st, 2016.  This requires the `prognostic_run` docker image to be available locally.  If you recreated the training dataset, you can initialize models from the end of those simulations (as in the manuscript) by pointing the initialization configuration paramter (`initial_conditions`) in `online-emulation-30day.yaml` to the `RESTART` directories stored in the outputs of each training data run.
 
 We also provide a target for the 1-year simulation (`make run_1yr`) to initialize a continuous 1-year simulation from July 1st, 2016.  **Note: This will generate very large amounts of data**.
+
+## Code
+
+All of the training and runtime code, as well as the configuration files can be found under `code/`.  This includes the `fv3net` submodule pointed to the release commit used to generate all of the results.  The training image (`fv3fit`) and prognostic run image (`prognostic_run`) were created using build files under `fv3net/docker`.  The relevant training involves code under `fv3net/external/fv3fit`, specifically the `train_microphyscs.py` and code under the `emulation/` directory.  The code responsible for runtime emulation tasks is found under `fv3net/external/emulation`.
